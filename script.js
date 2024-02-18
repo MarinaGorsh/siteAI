@@ -137,7 +137,7 @@ var editBtn = document.getElementById('edit-btn');
 var shareBtn = document.getElementById('share-btn');
 
 mainBtn.addEventListener('click', function() {
-    window.location.href = 'http://localhost:8000/';
+    window.location.href = 'https://marinagorsh.github.io/siteAI/';
 });
 aboutBtn.addEventListener('click', function() {
     loadPage('about.html');
