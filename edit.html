@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>AI.com</title>
+    </head>
+    <body>
+        <div class="lft">
+            <div class="right" style="  float: left; z-index: 1; position: absolute;">
+                <img class="cloud1" src="imgs/cloud1.png" alt="cloud"/>
+                <img class="star1" src="imgs/star.png" alt="star"/>
+                <img class="star5" src="imgs/star.png" alt="star"/>
+            </div> 
+                <img class="cloud2" src="imgs/cloud2.png" alt="cloud"/>
+                <img class="star2" src="imgs/star.png" alt="star"/>
+                <img class="star3" src="imgs/star.png" alt="star"/>
+                <img class="star4" src="imgs/star.png" alt="star"/>
+            </div>
+            <div class="resume">
+                <form action="">
+                    <h1>Resume</h1>
+                    <label for="fname">Full name</label>
+                    <input type="text" id="fname" name="fname"><br/>
+                    
+                    <label for="date">Date of bitrth</label>
+                    <input type="date" id="date" name="date"><br/><br/>
+                
+                    <label for="number">Phone number</label>
+                    <input type="tel" id="number" name="number"><br/><br/>
+
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" name="email"><br/>
+
+                    <label for="exp">Experience</label><br/>
+                    <textarea name="exp" cols="40" rows="5"></textarea><br/>
+
+                    <label for="skills">Skills</label><br/>
+                    <textarea name="skills" cols="40" rows="5"></textarea><br/>
+                
+                    <label for="lang" class="lang">Language</label>
+                    <div id="languageFormsContainer">
+                        <a onclick="addLanguageForm()">+</a>
+                    </div>
+                    <div>
+                        <label for="inputFile">File Upload</label>
+                        <input type="file" class="form-control-file" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+                    </div>
+                    <div class="canccreate">
+                        <input class="btns" type="button" value="Cancel" onclick="history.back()"/>
+                        <input class="btns" type="submit" value="Save"/>
+                    </div>
+            </div>
+ 
+        <script src="script.js"></script>
+    </body>
+</html>

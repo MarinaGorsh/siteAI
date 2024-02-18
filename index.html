@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: hidden;">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>AI.com</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a id="main-btn" class="logo">AI.com</a>
+                <div class="headers_btn">
+                    <form class="find">
+                        <input type="text" placeholder="Find...">
+                        <button type="submit"><img src="imgs/find.png" alt="find"></button>
+                    </form>
+                    <div class="navbar-right">
+                        <button class="btn" id="about-btn">About us</button>
+                        <button class="btn" id="contacts-btn">Contacts</button>
+                        <button class="btn" id="open-modal-btn">Log in</button>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <div class="lft">
+            <div class="modal" id="my-modal">
+                <div class="modal_box">
+                    <button class="modal_close" id="close-modal-btn">&#10006;</button>
+
+                    <form action="/index.html" id="login-form">
+                        <label for="fname">User Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="password">
+
+                        <a id="open-modal-btn_sign">Sign in</a>
+                        <a class="forgot">Forgot your password?</a>
+
+                        <input class="btnl" type="submit" value="Log in">
+                    </form>
+                </div>
+                <div class="modal" id="my-modal_sign">
+                    <div class="modal_box">
+                        <button class="modal_close" id="close-modal-btn_sign">&#10006;</button>
+                        <form action="/index.html">
+                            <label for="fname">User Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                            <label for="mail">E-mail</label>
+                            <input type="email" id="mail" name="email" placeholder="e-mail">
+                
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="password">
+                            
+                            <input class="btnl" type="submit" value="Sign in">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id='content'>
+                <div class="lft">
+                    <img class="cloud2" src="imgs/cloud2.png" alt="cloud"/>
+                    <img class="star2" src="imgs/star.png" alt="star"/>
+                    <div class="addnshare">
+                        <a id="create-btn" class="btncreate"><img src="imgs/create.png" alt="create_icon">Create resume</a>        
+                        <a id="user-btn" class="btnuser"><img src="imgs/user.png" alt="user_icon">My profile</a>
+                    </div>
+                    <div class="right">
+                        <img class="cloud1" src="imgs/cloud1.png" alt="cloud"/>
+                        <img class="star1" src="imgs/star.png" alt="star"/>
+                        <img class="star5" src="imgs/star.png" alt="star"/>
+                        <div class="edit">
+                            <a id="see-btn" class="btnsee">Resume</a>
+                            <a id="edit-btn" class="editbtn">edit</a>
+                            <a id="share-btn" class="btnshare"><img src="imgs/share.png" alt="share_img"></a>
+                        </div>
+                    </div> 
+                    <img class="star3" src="imgs/star.png" alt="star"/>
+                    <img class="star4" src="imgs/star.png" alt="star"/>
+                </div>
+            </div>
+        </div>  
+        <script src="script.js"></script>    
+    </body>
+</html>
